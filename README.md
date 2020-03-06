@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Starter
 
-## Available Scripts
+基于[create-react-app](https://create-react-app.dev/)改造，增删改了一些特性，以达到我理解的最佳实践。
 
-In the project directory, you can run:
+## 改造了以下特性
 
-### `yarn start`
+- 抽离 [ESLint](https://eslint.org/) 配置并更新到最佳实践
+- 抽离 [babel](https://babeljs.io/) 配置并更新到最佳实践
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 去掉了以下特性
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- ~~TypeScript 支持~~
+- ~~jest 测试支持~~
+- ~~postcss 支持~~
+- ~~删掉了许多用不到的 npm 包~~
 
-### `yarn test`
+## 增加了以下特性
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 新增 [prettier](https://prettier.io/) 支持，并兼容 ESLint 规则
+- 新增 [husky](https://github.com/typicode/husky)+[lintstaged](https://www.npmjs.com/package/lint-staged) 支持，配合 ESLint，检查提交代码的规范性。
+- 新增 [commitlint](https://github.com/conventional-changelog/commitlint)支持 ，配合 husky，让 git commit message 更规范。
+- 新增 [gh-pages](https://www.npmjs.com/package/gh-pages)支持，一个命令行即可部署到[Github Pages](https://pages.github.com/)
+- 推荐 css-in-js：选用 [styled-components](https://www.styled-components.com/)
+- 新增路由支持：[react-router](https://reacttraining.com/)
 
-### `yarn build`
+## 约定
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `components`/`containers`/`pages`分别对应：组件，容器和页面
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 推荐安装的 VSCode 插件
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ESLint
+- prettier
+- vscode-commitizen
+- markdownlint
 
-### `yarn eject`
+## 基于 React Starter 构建的作品
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [中国色](https://colors.ichuantong.cn/)
+- [Github 仓库标星统计](https://stars.yangerxiao.com/?repo=https://github.com/zerosoul/chinese-colors)
+- [土味情话生成器](https://works.yangerxiao.com/honeyed-words-generator/)
+- [静心呼吸，在线调节](https://works.yangerxiao.com/breathe-relaxer/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+更多：[http://works.yangerxiao.com/](http://works.yangerxiao.com/)
