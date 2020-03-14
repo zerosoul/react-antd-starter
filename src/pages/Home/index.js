@@ -5,7 +5,7 @@ export default function Home() {
     <StyledWrapper>
       <a
         className="link"
-        href="https://github.com/zerosoul/react-starter"
+        href="https://github.com/zerosoul/react-antd-starter"
         target="_blank"
         rel="noopener noreferrer"
       >
