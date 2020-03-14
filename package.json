@@ -1,10 +1,10 @@
 {
-  "name": "react-starter",
+  "name": "react-admin-starter",
   "version": "1.0.0",
-  "description": "React webapp starter",
+  "description": "React admin webapp starter",
   "main": "index.js",
   "dependencies": {
-    "case-sensitive-paths-webpack-plugin": "2.3.0",
+    "antd": "^4.0.1",
     "core-js": "^3.6.4",
     "css-loader": "3.4.2",
     "dotenv": "8.2.0",
@@ -54,22 +54,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zerosoul/react-starter.git"
+    "url": "git+https://github.com/zerosoul/react-admin-starter.git"
   },
   "keywords": [
-    "css3",
     "template",
     "react",
     "frontend",
-    "tool",
-    "amazing"
+    "admin",
+    "antd"
   ],
-  "author": "tristan",
+  "author": "Tristan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zerosoul/react-starter/issues"
+    "url": "https://github.com/zerosoul/react-admin-starter/issues"
   },
-  "homepage": "https://zerosoul.github.io/react-starter",
+  "homepage": "https://zerosoul.github.io/react-admin-starter",
   "engines": {
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
@@ -79,5 +78,17 @@
     "build": "node scripts/build.js",
     "deploy": "npm run build && gh-pages -d build",
     "changelog": "auto-changelog -p --release-summary -l false --template changelog.template.hbs && git add CHANGELOG.md"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
