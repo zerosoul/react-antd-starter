@@ -1,6 +1,6 @@
 # React Antd Starter
 
-基于[create-react-app](https://create-react-app.dev/)改造，增删改了一些特性，以达到我理解的最佳实践。
+针对后台管理系统类的前端脚手架，基于[create-react-app](https://create-react-app.dev/) & [antd](http://ant.design/)改造，增删改了一些特性，以达到我理解的最佳实践。
 
 ## 改造了以下特性
 
@@ -10,6 +10,7 @@
 ## 去掉了以下特性
 
 - ~~TypeScript 支持~~
+- ~~去掉了 moment webpack 配置，推荐使用[dayjs](https://github.com/iamkun/dayjs)~~
 - ~~jest 测试支持~~
 - ~~postcss 支持~~
 - ~~删掉了许多用不到的 npm 包~~
